@@ -46,7 +46,7 @@ pipeline  {
          stage("install mc"){
             steps {
                 echo "install mc";
-                apt install mc;
+                sudo apt install mc;
                 
             }
         }     
