@@ -26,21 +26,24 @@ pipeline  {
                 cat /etc/os-release;
             }
         }
-  stages {
+    }
+        stages {
         stage("hdd"){
             steps {
                 echo "Here it will show how much free space";
                 df -h;
             }
         }
-  stages {
+  } 
+      stages {
         stage("Show ip addres"){
             steps {
                 echo "your ip addres";
                 ip addr;
             }
         }
-  stages {
+  }
+      stages {
         stage("install mc"){
             steps {
                 echo "install mc";
@@ -48,12 +51,9 @@ pipeline  {
                 
             }
         }     
-   
+  }
 
 
    }
 }
-  }
-    }
-    }
-}
+ 
