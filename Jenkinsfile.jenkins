@@ -48,7 +48,14 @@ pipeline  {
                    '''
             }
         }
-  
+        stage("install mc"){
+            steps {
+                echo "install mc";
+                sh '''
+                sudo apt install mc;
+                   '''
+            }
+        }
          
  
 
