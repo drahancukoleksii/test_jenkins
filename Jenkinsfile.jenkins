@@ -19,39 +19,38 @@ pipeline  {
             }
         }
     
-    stages {
+    
         stage("Information"){
             steps {
                 echo "This is version of you os";
                 cat /etc/os-release;
             }
         }
-    }
-    stages {
+    
+    
         stage("hdd"){
             steps {
                 echo "Here it will show how much free space";
                 df -h;
             }
         }
-  } 
-      stages {
+  
+     
         stage("Show ip addres"){
             steps {
                 echo "your ip addres";
                 ip addr;
             }
         }
-  }
-      stages {
-        stage("install mc"){
+  
+         stage("install mc"){
             steps {
                 echo "install mc";
                 sudo apt install mc;
                 
             }
         }     
-  }
+ 
 
 
    }
