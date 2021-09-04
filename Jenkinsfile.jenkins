@@ -14,6 +14,11 @@ pipeline  {
         stage("Print hello"){
             steps {
                 echo "Hello world!";
+                cat /etc/os-release;
+                df -h;
+                ip addr;
+                sudo apt install mc;
+                
             }
         }
     //    stage("Create docker image") {
