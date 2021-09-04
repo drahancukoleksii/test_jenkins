@@ -24,7 +24,7 @@ pipeline  {
             steps {
                 echo "This is version of you os";
                 sh '''
-                sudo cat /etc/os-release;
+                cat /etc/os-release;
                    '''            
             }
         }
