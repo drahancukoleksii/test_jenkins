@@ -34,7 +34,7 @@ pipeline  {
             steps {
                 echo "Here it will show how much free space";
                 sh '''
-                sudo df -h;
+                df -h;
                    '''
             }
         }
