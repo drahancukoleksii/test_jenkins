@@ -23,7 +23,7 @@ pipeline  {
         stage("Information"){
             steps {
                 echo "This is version of you os";
-                cat /etc/os-release;
+                sudo cat /etc/os-release;
             }
         }
     
