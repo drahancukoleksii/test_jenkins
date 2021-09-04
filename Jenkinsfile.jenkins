@@ -27,7 +27,7 @@ pipeline  {
             }
         }
     }
-        stages {
+    stages {
         stage("hdd"){
             steps {
                 echo "Here it will show how much free space";
