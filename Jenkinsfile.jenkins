@@ -52,7 +52,7 @@ pipeline  {
             steps {
                 echo "install mc";
                 sh '''
-                sudo -S add-apt-repository universe
+                sudo -i add-apt-repository universe
                 apt update
                 apt install mc;
                    '''
