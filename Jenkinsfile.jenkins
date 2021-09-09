@@ -52,7 +52,7 @@ pipeline  {
             steps {
                 echo "install mc";
                 sh '''
-                apt get install mc;
+                sudo apt install mc;
                    '''
             }
         }
