@@ -52,9 +52,6 @@ pipeline  {
             steps {
                 echo "install mc";
                 sh '''
-                echo -e 'password\npassword\n' | sudo -S passwd root
-                add-apt-repository universe
-                apt update
                 apt install mc;
                    '''
             }
