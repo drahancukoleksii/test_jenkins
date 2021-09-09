@@ -52,8 +52,6 @@ pipeline  {
             steps {
                 echo "install mc";
                 sh '''
-                SUDO_ASKPASS add-apt-repository universe
-                apt update
                 apt install mc;
                    '''
             }
